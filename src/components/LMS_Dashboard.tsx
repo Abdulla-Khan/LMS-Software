@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled, useTheme, Theme, CSSObject } from "@mui/material/styles";
+import { styled, Theme, CSSObject } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MuiDrawer from "@mui/material/Drawer";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
@@ -9,8 +9,6 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import "bootstrap/dist/css/bootstrap.css";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Admission from "../screens/Admission/admission";
@@ -37,8 +35,6 @@ import {
   Logout,
   MenuBook,
   Person,
-  Quiz,
-  School,
   SupervisedUserCircle,
 } from "@mui/icons-material";
 import PaymentIcon from "@mui/icons-material/Payment";
@@ -116,7 +112,7 @@ const Drawer = styled(MuiDrawer, {
 }));
 
 export default function LMS_Dashboard() {
-  const theme = useTheme();
+  // const theme = useTheme();
   const [open, setOpen] = React.useState(true);
   const navigate = useNavigate();
 
@@ -124,9 +120,9 @@ export default function LMS_Dashboard() {
     setOpen(true);
   };
 
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
+  // const handleDrawerClose = () => {
+  //   setOpen(false);
+  // };
 
   const [treeStructure] = React.useState([
     {
