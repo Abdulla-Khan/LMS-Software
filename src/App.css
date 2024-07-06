@@ -1,0 +1,19 @@
+.products {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.school-logo {
+
+    height: 135px;
+    /* margin-bottom: 20px; */
+
+}
+
+.attendance {
+
+    width: 200px;
+}
+
